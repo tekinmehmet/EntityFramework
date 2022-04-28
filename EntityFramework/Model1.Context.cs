@@ -12,6 +12,8 @@ namespace EntityFramework
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class DbSinavOgrenciEntities : DbContext
     {
@@ -28,5 +30,11 @@ namespace EntityFramework
         public virtual DbSet<TBLDERSLER> TBLDERSLER { get; set; }
         public virtual DbSet<TBLNOTLAR> TBLNOTLAR { get; set; }
         public virtual DbSet<TBLOGRENCI> TBLOGRENCI { get; set; }
+        public virtual DbSet<TBLKULUPLER> TBLKULUPLER { get; set; }
+    
+        public virtual ObjectResult<NOTLAR_Result> NOTLAR()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<NOTLAR_Result>("NOTLAR");
+        }
     }
 }
