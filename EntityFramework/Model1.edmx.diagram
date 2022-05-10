@@ -11,6 +11,7 @@
         <AssociationConnector Association="DbSinavOgrenciModel.FK_TBLNOTLAR_TBLDERSLER" ManuallyRouted="false" />
         <AssociationConnector Association="DbSinavOgrenciModel.FK_TBLNOTLAR_TBLOGRENCI" ManuallyRouted="false" />
         <EntityTypeShape EntityType="DbSinavOgrenciModel.TBLKULUPLER" Width="1.5" PointX="3.375" PointY="4.75" />
+        <EntityTypeShape EntityType="DbSinavOgrenciModel.TBLURUNLER" Width="1.5" PointX="5.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

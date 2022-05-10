@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C5EAFDB7-AF91-4464-B780-A82DB35E86BA}</ProjectGuid>
+    <ProjectGuid>{B211817C-BBF9-4C0C-903D-0CD07B2438C4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>EntityFramework</RootNamespace>
-    <AssemblyName>EntityFramework</AssemblyName>
+    <RootNamespace>EntityFrameworkSonKisim</RootNamespace>
+    <AssemblyName>EntityFrameworkSonKisim</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -61,52 +61,37 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.Context.cs">
+    <Compile Include="Model\ModelSon.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
+      <DependentUpon>ModelSon.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model1.cs">
+    <Compile Include="Model\ModelSon.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>ModelSon.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model1.Designer.cs">
+    <Compile Include="Model\ModelSon.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>ModelSon.edmx</DependentUpon>
     </Compile>
-    <Compile Include="NOTLAR_Result.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+    <Compile Include="Model\TBLDERSLER.cs">
+      <DependentUpon>ModelSon.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TBLKULUPLER.cs">
+      <DependentUpon>ModelSon.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TBLNOTLAR.cs">
+      <DependentUpon>ModelSon.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TBLOGRENCILER.cs">
+      <DependentUpon>ModelSon.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TBLDERSLER.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TBLKULUPLER.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TBLNOTLAR.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TBLOGRENCI.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TBLURUNLER.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,12 +102,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="Model1.edmx">
+    <EntityDeploy Include="Model\ModelSon.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <LastGenOutput>ModelSon.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <None Include="Model\ModelSon.edmx.diagram">
+      <DependentUpon>ModelSon.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -139,15 +124,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Model1.Context.tt">
+    <Content Include="Model\ModelSon.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>ModelSon.Context.cs</LastGenOutput>
+      <DependentUpon>ModelSon.edmx</DependentUpon>
     </Content>
-    <Content Include="Model1.tt">
+    <Content Include="Model\ModelSon.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
+      <DependentUpon>ModelSon.edmx</DependentUpon>
+      <LastGenOutput>ModelSon.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
